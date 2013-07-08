@@ -74,3 +74,15 @@ cyl:
    model_type: urdf
    position: [ 2.0,-1.0,1.0 ]
    orientation: [ 0,0,0 ]
+
+cylHohl:
+   model: cylHohl
+   model_type: urdf
+   position: [ 2.0,-2.0,1.0 ]
+   orientation: [ 0,0,0 ]
+
+cone:
+   model: cone
+   model_type: urdf
+   position: [ 2.0,-3.0,1.0 ]
+   orientation: [ 0,0,0 ]
