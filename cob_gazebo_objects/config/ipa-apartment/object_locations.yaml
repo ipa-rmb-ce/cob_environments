@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 milk:
   model_type: urdf
   position: [-1.5, -0.5, 1.02]
@@ -64,8 +63,14 @@ couch:
   position: [3.6,0.6,0]
   orientation: [0, 0,-1.57079]
 
-cup-colored:
-   model: cup-colored
+cube:
+   model: cube
    model_type: urdf
-   position: [ 0,0,0 ]
+   position: [ 1.0,-1.0,1.0 ]
+   orientation: [ 0,0,0 ]
+
+cyl:
+   model: cyl
+   model_type: urdf
+   position: [ 2.0,-1.0,1.0 ]
    orientation: [ 0,0,0 ]
