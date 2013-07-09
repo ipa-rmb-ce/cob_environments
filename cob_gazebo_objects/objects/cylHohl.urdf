@@ -9,13 +9,13 @@
   <visual>
    <origin xyz="0 0 0.0" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/cylHohl.dae" scale="0.5 0.5 0.5"/>
+     <mesh filename="package://cob_gazebo_objects/Media/models/cylHohl.dae" scale="0.3 0.3 0.3"/>
    </geometry>
   </visual>
   <collision>
    <origin xyz="0 0 0.072" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/cylHohl.dae" scale="0.5 0.5 0.5">
+     <mesh filename="package://cob_gazebo_objects/Media/models/cylHohl.dae" scale="0.3 0.3 0.3">
    </geometry>
   </collision>     
   </link>

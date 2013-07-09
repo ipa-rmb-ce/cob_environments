@@ -72,17 +72,29 @@ cube:
 cyl:
    model: cyl
    model_type: urdf
-   position: [ 2.0,-1.0,1.0 ]
+   position: [ -3.5, -1, 1 ]
    orientation: [ 0,0,0 ]
 
 cylHohl:
    model: cylHohl
    model_type: urdf
-   position: [ 2.0,-2.0,1.0 ]
+   position: [ -3.5, 0, 1]
    orientation: [ 0,0,0 ]
 
 cone:
    model: cone
    model_type: urdf
-   position: [ 2.0,-3.0,1.0 ]
+   position: [ -4, 1, 1  ]
+   orientation: [ 0,0,0 ]
+
+cupAndPlate:
+   model: cupAndPlate
+   model_type: urdf
+   position: [ 2.0,-4.0,1.0 ]
+   orientation: [ 0,0,0 ]
+
+floor:
+   model: floor
+   model_type: urdf
+   position: [ -5.0,0.0, 1.0 ]
    orientation: [ 0,0,0 ]

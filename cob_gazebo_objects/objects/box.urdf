@@ -9,14 +9,17 @@
   <visual>
    <origin xyz="0 0 0.0" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/cube.dae" scale="0.25 0.25 0.25"/>
+     <mesh filename="package://cob_gazebo_objects/Media/models/box.stl"/>
    </geometry>
   </visual>
   <collision>
    <origin xyz="0 0 0.072" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/cube.dae" scale="0.25 0.25 0.25">
+     <mesh filename="package://cob_gazebo_objects/Media/models/box.stl">
    </geometry>
   </collision>     
   </link>
+  <gazebo reference="base_link">
+    <material>IPA/Wall</material>
+  </gazebo>
 </robot>
