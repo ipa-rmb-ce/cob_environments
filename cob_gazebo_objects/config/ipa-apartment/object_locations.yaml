@@ -1,6 +1,6 @@
 milk:
   model_type: urdf
-  position: [-1.5, -0.5, 1.02]
+  position: [-1.5, -0.5, 2.3]
   orientation: [0, 0, 0]
 
 salt:
@@ -96,5 +96,17 @@ cupAndPlate:
 floor:
    model: floor
    model_type: urdf
-   position: [ -5.0,0.0, 1.0 ]
+   position: [ -5.0,0.0, 0.4 ]
+   orientation: [ 0,0,0 ]
+
+bottomPlane:
+   model: bottomPlane
+   model_type: urdf
+   position: [ -11.0,0.0, 0.1 ]
+   orientation: [ 0,0,0 ]
+
+wall:
+   model: floor
+   model_type: urdf
+   position: [ -4,0.0, 3]
    orientation: [ 0,0,0 ]
