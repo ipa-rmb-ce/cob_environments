@@ -1,0 +1,58 @@
+<launch>
+
+ <!-- send urdf to param server -->
+  <param name="bottomPlane" textfile="$(find cob_gazebo_objects)/objects/bottomPlane.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_bottomPlane" pkg="gazebo" type="spawn_model" args=" -param bottomPlane -urdf -x -11 -y 0 -z 0  -R 0 -P 0 -Y 0 -model bottomPlane" respawn="false" output="screen" />
+
+ <!-- send urdf to param server -->
+  <param name="floor" textfile="$(find cob_gazebo_objects)/objects/floor.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_floor" pkg="gazebo" type="spawn_model" args=" -param floor -urdf -x -1.8 -y 0 -z -0.1 -R 0 -P 0 -Y 0 -model floor" respawn="false" output="screen" />
+
+ <!-- send urdf to param server -->
+  <param name="wall" textfile="$(find cob_gazebo_objects)/objects/wall.urdf" />
+
+  <node name="spawn_wall" pkg="gazebo" type="spawn_model" args=" -param wall -urdf -x -3.6 -y 0 -z 0.15 -R 0 -P 0 -Y 0 -model wall" respawn="false" output="screen" />
+
+
+ <!-- send urdf to param server -->
+  <param name="cyl" textfile="$(find cob_gazebo_objects)/objects/cyl.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_cyl" pkg="gazebo" type="spawn_model" args=" -param cyl -urdf -x -1.6 -y -0.2 -z 0.65  -R 0 -P 0 -Y 0 -model cyl" respawn="false" output="screen" />
+
+ <!-- send urdf to param server -->
+  <param name="cone" textfile="$(find cob_gazebo_objects)/objects/cone.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_cone" pkg="gazebo" type="spawn_model" args=" -param cone -urdf -x -1.6 -y 0.2 -z 0.65  -R 0 -P 0 -Y 0 -model cone" respawn="false" output="screen" />
+
+ <!-- send urdf to param server -->
+  <param name="cone_lying" textfile="$(find cob_gazebo_objects)/objects/cone.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_cone_lying" pkg="gazebo" type="spawn_model" args=" -param cone_lying -urdf -x -1.6 -y -0.5 -z 0.74  -R -2 -P 0 -Y -0.4 -model cone_lying" respawn="false" output="screen" />
+
+  <!-- send urdf to param server -->
+  <param name="cylHohl" textfile="$(find cob_gazebo_objects)/objects/cylHohl.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_cylHohl" pkg="gazebo" type="spawn_model" args=" -param cylHohl -urdf -x -1.8 -y 0.1 -z 0.65  -R 0 -P 0 -Y 0 -model cylHohl" respawn="false" output="screen" />
+
+
+  <!-- send urdf to param server -->
+  <param name="cylHohl2" textfile="$(find cob_gazebo_objects)/objects/cylHohl.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_cylHohl2" pkg="gazebo" type="spawn_model" args=" -param cylHohl2 -urdf -x -1.6 -y 0.6 -z 0.75  -R 0 -P 1.570796 -Y 0 -model cylHohl2" respawn="false" output="screen" />
+
+  <!-- send urdf to param server -->
+  <param name="box_small" textfile="$(find cob_gazebo_objects)/objects/box_small.urdf" />
+
+  <!-- push urdf to factory and spawn robot in gazebo -->
+  <node name="spawn_box_small" pkg="gazebo" type="spawn_model" args=" -param box_small -urdf -x -1.5 -y 0.36 -z 0.65  -R 0 -P 0 -Y 0 -model box_small" respawn="false" output="screen" />
+
+</launch>
