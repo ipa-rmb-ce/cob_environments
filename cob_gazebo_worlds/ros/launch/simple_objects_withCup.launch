@@ -22,25 +22,25 @@
   <param name="cyl" textfile="$(find cob_gazebo_objects)/objects/cyl.urdf" />
 
   <!-- push urdf to factory and spawn robot in gazebo -->
-  <node name="spawn_cyl" pkg="gazebo" type="spawn_model" args=" -param cyl -urdf -x -1.8 -y 0.5 -z 0.65  -R 0 -P 0 -Y 0 -model cyl" respawn="false" output="screen" />
+  <node name="spawn_cyl" pkg="gazebo" type="spawn_model" args=" -param cyl -urdf  -x -1.65 -y 0 -z 0.65  -R 0 -P 0 -Y 0 -model cyl" respawn="false" output="screen" />
 
 
   <!-- send urdf to param server -->
   <param name="cylHohl" textfile="$(find cob_gazebo_objects)/objects/cylHohl.urdf" />
 
   <!-- push urdf to factory and spawn robot in gazebo -->
-  <node name="spawn_cylHohl" pkg="gazebo" type="spawn_model" args=" -param cylHohl -urdf -x -1.6 -y 0 -z 0.65  -R 0 -P 0 -Y 0 -model cylHohl" respawn="false" output="screen" />
+  <node name="spawn_cylHohl" pkg="gazebo" type="spawn_model" args=" -param cylHohl -urdf -x -1.55 -y 0.3 -z 0.65  -R 0 -P 0 -Y 0 -model cylHohl" respawn="false" output="screen" />
 
   <!-- send urdf to param server -->
   <param name="cupAndPlate" textfile="$(find cob_gazebo_objects)/objects/cupAndPlate.urdf" />
 
   <!-- push urdf to factory and spawn robot in gazebo -->
-  <node name="spawn_cupAndPlate" pkg="gazebo" type="spawn_model" args=" -param cupAndPlate -urdf -x -1.6 -y 0.7 -z 0.65  -R 0 -P 0 -Y 0 -model cupAndPlate" respawn="false" output="screen" />
+  <node name="spawn_cupAndPlate" pkg="gazebo" type="spawn_model" args=" -param cupAndPlate -urdf -x -1.5 -y 0.7 -z 0.63  -R 0 -P 0 -Y 0 -model cupAndPlate" respawn="false" output="screen" />
 
   <!-- send urdf to param server -->
   <param name="cup_large" textfile="$(find cob_gazebo_objects)/objects/cup_large.urdf" />
 
   <!-- push urdf to factory and spawn robot in gazebo -->
-  <node name="spawn_cup_large" pkg="gazebo" type="spawn_model" args=" -param cup_large -urdf -x -1.7 -y -0.3 -z 0.65  -R 0 -P 0 -Y 0.4 -model cup_large" respawn="false" output="screen" />
+  <node name="spawn_cup_large" pkg="gazebo" type="spawn_model" args=" -param cup_large -urdf -x -1.75 -y -0.3 -z 0.65  -R 0 -P 0 -Y 0.4 -model cup_large" respawn="false" output="screen" />
 
 </launch>

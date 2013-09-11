@@ -15,11 +15,15 @@
   <collision>
    <origin xyz="0 0 0.072" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/box.stl">
+     <!--mesh filename="package://cob_gazebo_objects/Media/models/box.stl"-->
    </geometry>
   </collision>     
   </link>
   <gazebo reference="base_link">
     <material>IPA/Wall</material>
   </gazebo>
+
+<gazebo>
+	<static>true</static>
+</gazebo>
 </robot>

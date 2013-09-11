@@ -15,8 +15,12 @@
   <collision>
    <origin xyz="0 0 0.0" rpy="0 0 0" />
    <geometry>
-     <mesh filename="package://cob_gazebo_objects/Media/models/cupAndPlate.dae" scale="0.1 0.1 0.1">
+     <!--mesh filename="package://cob_gazebo_objects/Media/models/cupAndPlate.dae" scale="0.1 0.1 0.1"-->
    </geometry>
   </collision>     
   </link>
+
+<gazebo>
+	<static>true</static>
+</gazebo>
 </robot>
